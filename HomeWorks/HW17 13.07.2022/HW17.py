@@ -31,12 +31,6 @@ def download_json(name):
         }
     )
 
-    # print(response)
-    # print(type(response))
-
-    #  response.status_code  # 200
-    #  response.content  # bytes b""
-
     json_data = response.content.decode()
 
     with open(f'tmp/data_{name}.json', 'w') as file:
